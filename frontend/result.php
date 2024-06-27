@@ -153,7 +153,7 @@ $negative_rate = array(
                             <div class="result">
                                 <div id="knn" class='is-size-4 has-text-weight-bold'></div>
                                 <p>
-                                    K-Nearest Neighbors (KNN) is a simple, instance-based learning algorithm that classifies data points based on their proximity to other points.
+                                    K-Nearest Neighbors (KNN) is a simple method that classifies things by looking at the closest examples to it.
                                 </p>
                             </div>
 
@@ -165,7 +165,7 @@ $negative_rate = array(
                                 <div id="svc" class='is-size-4 has-text-weight-bold'></div>
                             </div>
                             <p>
-                                Support Vector Classifier (SVC) is a powerful classifier that works by finding the optimal hyperplane that separates data points of different classes.
+                                Support Vector Classifier (SVC) is a strong method that finds the best line or boundary to separate different groups of data points.
                             </p>
                         </div>
                         <div class="cell has-background-light has-text-primary-invert has-radius-normal p-3 mt-2 has-text-centered">
@@ -175,7 +175,7 @@ $negative_rate = array(
                                 <div id="xgb" class='is-size-4 has-text-weight-bold'></div>
                             </div>
                             <p>
-                                Gradient Boosting (XGB) is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models.
+                                Gradient Boosting (XGB) is a method for solving problems by combining many weak models to make better predictions.
                             </p>
                         </div>
                         <div class="cell has-background-light has-text-primary-invert has-radius-normal p-3 mt-2 has-text-centered">
@@ -185,7 +185,7 @@ $negative_rate = array(
                                 <div id="rfc" class='is-size-4 has-text-weight-bold'></div>
                             </div>
                             <p>
-                                Random Forest (RF) is an ensemble learning method that operates by constructing multiple decision trees during training and outputting the mode of the classes for classification.
+                                Random Forest (RF) is a technique that makes many decision trees during training and then uses the majority vote of these trees for classification.
                             </p>
                         </div>
                         <div class="cell has-background-light has-text-primary-invert has-radius-normal p-3 mt-2 has-text-centered">
@@ -195,7 +195,7 @@ $negative_rate = array(
                                 <div id="lr" class='is-size-4 has-text-weight-bold'></div>
                             </div>
                             <p>
-                                Logistic Regression (LR) is a statistical model that in its basic form uses a softmax function to model a multinomial dependent variable.
+                                Logistic Regression (LR) is a statistical method that uses a special function to predict outcomes based on input data.
                             </p>
                         </div>
                     </div>
@@ -207,6 +207,9 @@ $negative_rate = array(
                             <div class="label">Predicted Sentiment: </div>
                             <div class="result">
                                 <div id="csg_knn" class='is-size-4 has-text-weight-bold'></div>
+                                <p>
+                                    K-Nearest Neighbors (KNN) is a simple method that classifies things by looking at the closest examples to it.
+                                </p>
                             </div>
                         </div>
                         <div class="cell has-background-light has-text-primary-invert has-radius-normal p-3 mt-2 has-text-centered">
@@ -214,6 +217,9 @@ $negative_rate = array(
                             <div class="label">Predicted Sentiment: </div>
                             <div class="result">
                                 <div id="csg_svc" class='is-size-4 has-text-weight-bold'></div>
+                                <p>
+                                    Support Vector Classifier (SVC) is a strong method that finds the best line or boundary to separate different groups of data points.
+                                </p>
                             </div>
                         </div>
                         <div class="cell has-background-light has-text-primary-invert has-radius-normal p-3 mt-2 has-text-centered">
@@ -221,6 +227,9 @@ $negative_rate = array(
                             <div class="label">Predicted Sentiment: </div>
                             <div class="result">
                                 <div id="csg_xgb" class='is-size-4 has-text-weight-bold'></div>
+                                <p>
+                                    Gradient Boosting (XGB) is a method for solving problems by combining many weak models to make better predictions.
+                                </p>
                             </div>
                         </div>
                     </div>

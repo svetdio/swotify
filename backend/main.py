@@ -79,11 +79,11 @@ csg_xgb_model = pickle.load(open('models/csg/tuned_xgb_model.pkl', 'rb'))
 
 # Description of each models
 model_desc = {
-    "KNeighborsClassifier": "K-Nearest Neighbors (KNN) is a simple, instance-based learning algorithm that classifies data points based on their proximity to other points.",
-    "RandomForestClassifier": "Support Vector Classifier (SVC) is a powerful classifier that works by finding the optimal hyperplane that separates data points of different classes.",
-    "SVC": "Gradient Boosting (XGB) is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models.",
-    "XGBClassifier": "Random Forest (RF) is an ensemble learning method that operates by constructing multiple decision trees during training and outputting the mode of the classes for classification.",
-    "LogisticRegression": "Logistic Regression (LR) is a statistical model that in its basic form uses a softmax function to model a multinomial dependent variable.",
+    "KNeighborsClassifier": "K-Nearest Neighbors (KNN) is a simple method that classifies things by looking at the closest examples to it.",
+    "RandomForestClassifier": "Random Forest (RF) is a technique that makes many decision trees during training and then uses the majority vote of these trees for classification.",
+    "SVC": "Support Vector Classifier (SVC) is a strong method that finds the best line or boundary to separate different groups of data points.",
+    "XGBClassifier": "Gradient Boosting (XGB) is a method for solving problems by combining many weak models to make better predictions.",
+    "LogisticRegression": "Logistic Regression (LR) is a statistical method that uses a special function to predict outcomes based on input data.",
 }
 
 sia = SentimentIntensityAnalyzer()
@@ -294,7 +294,7 @@ async def get_models():
     except:
         os.makedirs(os.path.dirname(model_path), exist_ok=True)
         models = os.listdir(model_path)
-    return models
+    return [model for model in models if model.endswith('.pkl')]
 
 if __name__ == "__main__":
     import uvicorn
